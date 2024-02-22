@@ -1,11 +1,31 @@
-/* eslint-disable */
-import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+window.onload = () => {
+  document.querySelector(".card").classList.add(GenerateRandomSuit());
+  document.querySelector(".card").innerHTML.GenerateRandomNumber();
+};
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+let GenerateRandomNumber = () => {
+  let numbers = [
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K"
+  ];
+  let randomNumber = math.floor(math.random() * numbers.length);
+  return numbers[randomNumber];
+};
+let GenerateRandomSuit = () => {
+  let suit = ["diamond", "spade", "heart", "club"];
+  let randomSuit = math.floor(math.random() * suit.length);
+  return suit[randomSuit];
 };
