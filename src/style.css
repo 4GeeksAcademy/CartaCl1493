@@ -1,4 +1,3 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
 body {
   background-color: #0e7e12;
   box-sizing: border-box;
@@ -14,31 +13,4 @@ body {
   padding-top: 180px;
   border-radius: 5px;
   border: 1px solid black;
-  position: relative;
-  &:before {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 80px;
-  }
-  &:after {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 80px;
-  }
-  &.spade:before. &.spade:after {
-    content: "\2660";
-  }
-  &.club:before. &.club:after {
-    content: "\2663";
-    color: red;
-  }
-  &.heart:before. &.heart:after {
-    content: "\2665";
-  }
-  &.diamond:before. &.diamond:after {
-    content: "\2666";
-    color: red;
-  }
 }
